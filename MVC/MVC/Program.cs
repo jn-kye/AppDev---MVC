@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("RELEASE BRANCH");
+            Console.WriteLine("STAGING BRANCH TO");
+            Console.WriteLine("gumagana hahahahaha");
         }
     }
 }
