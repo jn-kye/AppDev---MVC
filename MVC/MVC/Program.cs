@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("RELEASE BRANCH");
+            Console.WriteLine("Development Branch");
+            Console.WriteLine("Dark mode feature");
         }
     }
 }
