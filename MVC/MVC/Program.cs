@@ -6,23 +6,38 @@ namespace MVC
     {
         static void Main(string[] args)
         {
-            string password;
 
             Console.WriteLine("Version 2.0\n");
 
-            Console.WriteLine("Application Login");
-            Console.Write("Enter your username: ");
-            string username = Console.ReadLine();
-
-            Console.WriteLine("Your username: " + username);
+            bool isCorrect = true;
 
             do
             {
-                Console.Write("Enter your password to continue: ");
-                password = Console.ReadLine();
-            }while (string.IsNullOrEmpty(password));
+                Console.WriteLine("User Information");
+                Console.Write("Enter your First name: ");
+                string firstName = Console.ReadLine();
 
-            Console.WriteLine("Welcome to the Program!");
+                Console.Write("Enter your Last name: ");
+                string lastName = Console.ReadLine();
+
+                Console.Write("Enter your age: ");
+                int age = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("\nYour name is: " + firstName + " " + lastName);
+                Console.WriteLine("Your age is: " + age);
+
+                Console.Write("Is the information correct?: ");
+                string verify = Console.ReadLine();
+
+                if (verify == "Yes" || verify == "yes") 
+                    isCorrect = false;
+
+                else
+                    Console.WriteLine("Please enter your correct information.\n");
+
+            } while (isCorrect);
+
+            Console.WriteLine("\nInformation Saved!");
 
             Console.ReadLine();
         }
