@@ -8,6 +8,8 @@ namespace MVC
         {
             string password;
 
+            Console.WriteLine("Version 2.0\n");
+
             Console.WriteLine("Application Login");
             Console.Write("Enter your username: ");
             string username = Console.ReadLine();
